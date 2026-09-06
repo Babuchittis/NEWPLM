@@ -161,7 +161,7 @@ sap.ui.define([
       this.byId("dDimId").setSelectedKey(d.Dim_id        || "");
       this.byId("dValidTo").setValue(d.valid_to          || "");
       this.byId("dValidFrom").setValue(d.Valid_from      || "");
-      this.byId("dDimStatus").setSelectedKey(d.Dim_Status || "ACTIV");
+      this.byId("dDimStatus").setSelectedKey(d.Dim_Status || "E0001");
       this.byId("dStatusReason").setValue(d.PT_Status_Reason || "");
       this.byId("dimDialog").open();
     },

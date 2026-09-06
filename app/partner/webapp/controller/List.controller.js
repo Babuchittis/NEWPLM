@@ -60,7 +60,7 @@ sap.ui.define([
     onCreatePress: function () {
       this.byId("newName").setValue("");
       this.byId("newCountry").setValue("");
-      this.byId("newStatus").setSelectedKey("ACTIV");
+      this.byId("newStatus").setSelectedKey("A");
       this.byId("newLevel").setValue("");
       this.byId("createDialog").open();
     },

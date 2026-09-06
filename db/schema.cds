@@ -23,13 +23,13 @@ entity YPT_T_STATUS {
 /** Dimension text table */
 entity YPT_T_PTD {
   key Dim_Id   : String(10);
-      Dim_text : String(30);
+      Dim_text : String(50);
 }
 
 /** Dimension status text table */
 entity YPTD_T_STATUS {
   key Dim_Status      : String(5);
-      Dim_status_text : String(30);
+      Dim_status_text : String(50);
 }
 
 /** Descriptor text table */
@@ -43,7 +43,9 @@ entity YBP_T_DESC {
 /** Business Partner master data */
 entity YBP_D_PARTNER {
   key Partner_Id     : Integer @Core.Computed @readonly;
+  @title : 'Partner ID'
       Name_org       : String(50);
+      @title : 'Name of the Organization'
       Country        : String(3);
       Partner_status : String(5);
       Partner_level  : String(20);
